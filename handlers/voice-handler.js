@@ -15,9 +15,9 @@ exports.handler = function(context, event, callback) {
     numDigits: 1,
     timeout: 10
   });
-  gather.say('Press 1 to book a haircut. Press 2 to schedule a spa treatment. Press 3 for other beauty services. Press 4 to speak with a representative.', { voice: 'Polly.Joanna' });
+  gather.say('Press 1 to book a haircut. Press 2 to schedule a spa treatment. Press 3 for other beauty services. Press 4 to speak with someone.', { voice: 'Polly.Joanna' });
 
-  twiml.say('We did not receive your selection. Please call again. Goodbye!', { voice: 'Polly.Joanna' });
+  twiml.say('Thank you for calling. Have a beautiful day!', { voice: 'Polly.Joanna' });
   twiml.hangup();
 
   callback(null, twiml);
